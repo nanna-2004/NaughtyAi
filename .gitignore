@@ -1,0 +1,8 @@
+# Secret Keys
+serviceAccountKey.json
+.env.local
+gcp-credentials.json
+node_modules
+node_modules
+gcp-credentials.json
+remotion-youtube-production-2cea0d1bebeb.json

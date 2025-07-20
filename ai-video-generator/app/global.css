@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid gray;
+}
+/* Optional hover effect for theme options */
+.theme-option:hover {
+  opacity: 1 !important;
+  text-decoration: underline;
+}
+.site-header {
+  display: flex;
+  align-items: center;          /* vertically center items */
+  justify-content: space-between; /* push logo left, switcher right */
+  padding: 0 20px;
+  height: 60px;
+  background-color: #fff;
+}
+/* app/_components/LoadingScreen.css */
+
+.loader-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid lightgray;
+  border-top: 5px solid black;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 16px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+/* Theme-based text and background */
+html.light {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --subtext-color: #555;
+  --box-bg: #f9f9f9;
+  --border-color: #ccc;
+}
+
+html.dark {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --subtext-color: #bbb;
+  --box-bg: #1e1e1e;
+  --border-color: #333;
+}
+
+/* Container */
+.container-box {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+/* Headings */
+.section-heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.sub-heading {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.description-text {
+  font-size: 0.875rem;
+  color: var(--subtext-color);
+  margin-bottom: 0.5rem;
+}
+
+/* Text Input */
+.text-input {
+  background-color: var(--box-bg);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+.text-input.large {
+  height: 3.5rem;
+  font-size: 1rem;
+}
+
+/* Topic Buttons */
+.topic-button {
+  background-color: var(--box-bg);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  transition: background 0.3s;
+}
+
+.topic-button:hover {
+  background-color: var(--border-color);
+}
+
+.topic-button.active {
+  background-color: #0070f3;
+  color: white;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+/* Selected Topic Box */
+.selected-topic-box {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #e0f0ff;
+  border: 1px solid #90caff;
+  border-radius: 0.5rem;
+}
+
+.selected-topic-text {
+  color: #004080;
+  font-size: 0.875rem;
+}
