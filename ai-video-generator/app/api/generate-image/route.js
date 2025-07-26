@@ -1,14 +1,14 @@
-import { db } from "@/app/Configs/firebaseConfig";
-import { collection, addDoc, serverTimestamp } from "firebase/firestore";
-import { auth } from "firebase/auth";
+import { NextResponse } from "next/server";
 
-const user = auth.currentUser;
-
-if (user) {
-  await addDoc(collection(db, "userContent"), {
-    uid: user.uid,
-    type: "image", // or "video", "audio"
-    contentUrl: "https://your-cdn.com/image.jpg",
-    timestamp: serverTimestamp(),
-  });
+export async function POST(req) {
+  try {
+    // This is a placeholder API route for image generation
+    // The actual image generation logic is handled by the generate-image-data route
+    return NextResponse.json({ 
+      message: "Image generation endpoint - please use /api/generate-image-data instead" 
+    });
+  } catch (error) {
+    console.error("Error in generate-image route:", error);
+    return NextResponse.json({ error: "Internal server error" }, { status: 500 });
+  }
 }
