@@ -1,4 +1,16 @@
 {
+  "name": "naughty-ai",
+  "version": "1.0.0",
+  "description": "AI Video and Image Generator",
+  "main": "ai-video-generator/app/page.js",
+  "scripts": {
+    "build": "cd ai-video-generator && npm install && npm run build",
+    "dev": "cd ai-video-generator && npm install && npm run dev",
+    "start": "cd ai-video-generator && npm start"
+  },
+  "workspaces": [
+    "ai-video-generator"
+  ],
   "dependencies": {
     "@deepgram/sdk": "^4.4.0"
   }

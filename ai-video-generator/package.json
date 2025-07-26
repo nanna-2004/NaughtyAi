@@ -10,8 +10,7 @@
     "export": "next export",
     "tsc": "tsc",
     "convert": "tsup . --out-dir converted --format esm,cjs --silent --dts false",
-    "remotion:bundle": "remotion bundle --entry-point ./remotion/index.js --out-dir ./public/remotion",
-    "render": "node ./remotion/render.js"
+        "remotion:bundle": "remotion bundle --entry-point ./remotion/index.js --out-dir ./public/remotion"
   },
   "overrides": {
     "ws": "8.17.0"
