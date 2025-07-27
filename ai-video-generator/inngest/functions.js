@@ -2,9 +2,13 @@ import { inngest } from "./client";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import { TextToSpeechClient } from "@google-cloud/text-to-speech";
 import { adminDb, adminStorage } from "@/lib/firebaseAdmin";
+import { setupGoogleCloudCredentials } from "@/lib/googleCloudAuth";
 import * as mm from 'music-metadata';
 import axios from 'axios';
 import { FieldValue } from "firebase-admin/firestore"; // Import FieldValue for incrementing
+
+// Ensure Google Cloud credentials are set up
+setupGoogleCloudCredentials();
 
 const GEMINI_MODEL = "gemini-1.5-flash-latest";
 const IMAGEN_MODEL = "imagen-3.0-generate-002";
