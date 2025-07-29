@@ -63,7 +63,7 @@ function GeneratedImages() {
     <div id="generated-images" className="p-8 bg-gray-900 text-white"> 
       <div className="text-center mb-10">
         <h1 className="text-4xl font-bold mb-2">GENERATED IMAGES</h1>
-        <p className="text-gray-400">Discover what others have created with Naughty AI.</p>
+        <p className="text-gray-400">Discover what others have created with Naught AI.</p>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
