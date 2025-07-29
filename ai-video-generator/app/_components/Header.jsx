@@ -51,7 +51,7 @@ function Header() {
         {/* Logo and Title */}
         <div className="flex items-center gap-3">
           <Image src="/logo.svg" alt="Logo" width={40} height={40} />
-          <h2 className="text-2xl font-bold">Naughty AI</h2>
+          <h2 className="text-2xl font-bold">Naught AI</h2>
         </div>
 
         {/* Right section */}
